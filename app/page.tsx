@@ -1,0 +1,287 @@
+import Navigation from '@/components/navigation'
+import Footer from '@/components/footer'
+import Link from 'next/link'
+import { ArrowRight, Heart, Users } from 'lucide-react'
+
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-background">
+      <Navigation />
+
+      {/* Hero Section */}
+      <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl -z-10"></div>
+        <div className="absolute bottom-0 left-0 w-72 h-72 bg-primary/5 rounded-full blur-3xl -z-10"></div>
+
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance leading-tight">
+            Welcome to <span className="text-primary">Syotria</span>
+          </h1>
+          <p className="text-xl md:text-2xl text-foreground/70 mb-8 text-balance leading-relaxed max-w-2xl mx-auto">
+            A warm, supportive community for girls centered on quarterly wellness challenges,
+            mindful movement, and meaningful connection.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <Link
+              href="/join-us"
+              className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full hover:bg-primary/90 transition-all hover:shadow-lg text-lg font-semibold"
+            >
+              Join the Community <ArrowRight className="w-5 h-5" />
+            </Link>
+            <Link
+              href="/how-we-do-it"
+              className="inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground px-8 py-4 rounded-full hover:bg-secondary/80 transition-all border-2 border-primary/20 text-lg font-semibold"
+            >
+              Learn How We Work
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Challenges Overview */}
+      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-secondary/30">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
+            Our Quarterly Challenges
+          </h2>
+          <p className="text-center text-foreground/70 mb-16 text-lg max-w-2xl mx-auto">
+            Each quarter, we come together for 90 days of consistent movement, growth, and
+            sisterhood.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Yoga Challenge */}
+            <div className="bg-card rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
+                <span className="text-3xl">🧘</span>
+              </div>
+              <h3 className="text-2xl font-bold text-foreground mb-2">Yoga Challenge</h3>
+              <p className="text-foreground/70 text-sm">
+                Q1 & Q3: Mindful movement and flexibility through guided yoga practices.
+              </p>
+            </div>
+
+            {/* Pilates Challenge */}
+            <div className="bg-card rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
+                <span className="text-3xl">💪</span>
+              </div>
+              <h3 className="text-2xl font-bold text-foreground mb-2">Pilates Challenge</h3>
+              <p className="text-foreground/70 text-sm">
+                Q2 & Q4: Core strength and graceful movement for total body wellness.
+              </p>
+            </div>
+
+            {/* Rope Skipping */}
+            <div className="bg-card rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
+                <span className="text-3xl">⛹️</span>
+              </div>
+              <h3 className="text-2xl font-bold text-foreground mb-2">Rope Skipping</h3>
+              <p className="text-foreground/70 text-sm">
+                Month 2 of each quarter: Fun cardio challenge to boost endurance and energy.
+              </p>
+            </div>
+
+            {/* Steps Challenge */}
+            <div className="bg-card rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
+                <span className="text-3xl">👟</span>
+              </div>
+              <h3 className="text-2xl font-bold text-foreground mb-2">Steps Challenge</h3>
+              <p className="text-foreground/70 text-sm">
+                Final month: Daily movement and consistency challenge to celebrate progress.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Tea Time Section */}
+      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+                Tea Time: Our Spaces for Connection
+              </h2>
+              <p className="text-foreground/70 text-lg mb-6 leading-relaxed">
+                Every two weeks, we gather virtually for open, honest conversations about
+                life as girls and women. No judgment, just real talk about what matters.
+              </p>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-start gap-3">
+                  <Heart className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
+                  <span className="text-foreground/80">
+                    <strong>Reproductive Health:</strong> Understanding our bodies
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Heart className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
+                  <span className="text-foreground/80">
+                    <strong>Friendships:</strong> Navigating relationships and sisterhood
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Heart className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
+                  <span className="text-foreground/80">
+                    <strong>Finances:</strong> Money, independence, and smart choices
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Heart className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
+                  <span className="text-foreground/80">
+                    <strong>Personal Growth:</strong> Manifestation and becoming our best selves
+                  </span>
+                </li>
+              </ul>
+              <Link
+                href="/tea-time"
+                className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+              >
+                Explore Tea Time <ArrowRight className="w-5 h-5" />
+              </Link>
+            </div>
+            <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl h-96 flex items-center justify-center">
+              <span className="text-6xl">☕</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* In-Person Meetups */}
+      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-secondary/30">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl h-96 flex items-center justify-center order-2 md:order-1">
+              <span className="text-6xl">🤝</span>
+            </div>
+            <div className="order-1 md:order-2">
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+                In-Person Meetups: The Syotria Experience
+              </h2>
+              <p className="text-foreground/70 text-lg mb-6 leading-relaxed">
+                At the end of every quarter, we gather in person to celebrate our progress,
+                deepen our connections, and create lasting memories together. It's where
+                the magic of Syotria truly comes alive.
+              </p>
+              <div className="bg-card rounded-2xl p-6 mb-6 border-l-4 border-primary">
+                <p className="text-foreground">
+                  <strong>Mandatory quarterly meetups</strong> ensure everyone experiences
+                  the full power of in-person sisterhood. Plus, we occasionally add bonus
+                  meetups for extra connection and fun.
+                </p>
+              </div>
+              <div className="flex items-start gap-4">
+                <Users className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Built for Sisterhood</h3>
+                  <p className="text-foreground/70">
+                    Every meetup is designed to strengthen bonds, celebrate consistency, and
+                    remind each other why we show up.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Core Values */}
+      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
+            What We Stand For
+          </h2>
+          <p className="text-center text-foreground/70 mb-16 text-lg max-w-2xl mx-auto">
+            <span className="text-primary">Syotria</span> is built on four pillars that guide everything we do.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-card rounded-2xl p-8 text-center">
+              <div className="text-5xl mb-4">✨</div>
+              <h3 className="text-2xl font-bold text-foreground mb-3">Consistency</h3>
+              <p className="text-foreground/70">
+                Showing up for yourself and each other, no matter what.
+              </p>
+            </div>
+            <div className="bg-card rounded-2xl p-8 text-center">
+              <div className="text-5xl mb-4">⚖️</div>
+              <h3 className="text-2xl font-bold text-foreground mb-3">Balance</h3>
+              <p className="text-foreground/70">
+                Honoring both strength and softness in our wellness journeys.
+              </p>
+            </div>
+            <div className="bg-card rounded-2xl p-8 text-center">
+              <div className="text-5xl mb-4">🤲</div>
+              <h3 className="text-2xl font-bold text-foreground mb-3">Accountability</h3>
+              <p className="text-foreground/70">
+                Supporting each other to reach our goals and celebrate wins.
+              </p>
+            </div>
+            <div className="bg-card rounded-2xl p-8 text-center">
+              <div className="text-5xl mb-4">💝</div>
+              <h3 className="text-2xl font-bold text-foreground mb-3">Sisterhood</h3>
+              <p className="text-foreground/70">
+                Creating a safe, inclusive space where everyone belongs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Merch Teaser */}
+      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-secondary/30">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <span className="text-primary">Syotria</span> Merch
+          </h2>
+          <p className="text-foreground/70 text-lg mb-8 max-w-2xl mx-auto">
+            Wear your sisterhood with pride. Our thoughtfully designed merch celebrates the
+            Syotria journey and represents the values that bind our community together.
+          </p>
+          <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl p-12 mb-8 h-64 flex items-center justify-center">
+            <span className="text-6xl">👕</span>
+          </div>
+          <Link
+            href="/merch"
+            className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full hover:bg-primary/90 transition-all hover:shadow-lg font-semibold"
+          >
+            Explore Our Store
+          </Link>
+        </div>
+      </section>
+
+      {/* Email Signup */}
+      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+            Stay in the Loop
+          </h2>
+          <p className="text-foreground/70 text-lg mb-8">
+            Get updates on new challenges, Tea Time topics, and exclusive community moments.
+          </p>
+          <form className="flex flex-col sm:flex-row gap-3 w-full">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="flex-1 px-6 py-3 rounded-full bg-card border-2 border-border focus:border-primary focus:outline-none transition-colors"
+              required
+            />
+            <button
+              type="submit"
+              className="px-8 py-3 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors font-semibold whitespace-nowrap"
+            >
+              Subscribe
+            </button>
+          </form>
+          <p className="text-foreground/50 text-sm mt-4">
+            Join our community and never miss what's happening at Syotria.
+          </p>
+        </div>
+      </section>
+
+      <Footer />
+    </main>
+  )
+}
