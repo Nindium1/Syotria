@@ -153,9 +153,9 @@ export default function Home() {
                 Explore Tea Time <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
-            <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl h-96 flex items-center justify-center">
-              <span className="text-6xl">☕</span>
-            </div>
+            <div className="rounded-3xl h-96 overflow-hidden">
+  <img src="/tea-time.jpg" alt="Tea Time" className="w-full h-full object-cover" />
+</div>
           </div>
         </div>
       </section>
