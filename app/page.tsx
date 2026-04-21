@@ -164,9 +164,9 @@ export default function Home() {
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-secondary/30">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl h-96 flex items-center justify-center order-2 md:order-1">
-              <span className="text-6xl">🤝</span>
-            </div>
+            <div className="rounded-3xl h-96 overflow-hidden order-2 md:order-1">
+  <img src="/meetups.jpg" alt="In-Person Meetups" className="w-full h-full object-cover" />
+</div>
             <div className="order-1 md:order-2">
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
                 In-Person Meetups: The Syotria Experience
