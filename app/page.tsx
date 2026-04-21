@@ -9,15 +9,22 @@ export default function Home() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl -z-10"></div>
-        <div className="absolute bottom-0 left-0 w-72 h-72 bg-primary/5 rounded-full blur-3xl -z-10"></div>
+      <section
+        className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
+        style={{
+          backgroundImage: 'url(/hero-bg.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        {/* Dark overlay for readability */}
+        <div className="absolute inset-0 bg-black/50"></div>
 
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance leading-tight">
+        <div className="max-w-4xl mx-auto text-center relative z-10">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 text-balance leading-tight">
             Welcome to <span className="text-primary">Syotria</span>
           </h1>
-          <p className="text-xl md:text-2xl text-foreground/70 mb-8 text-balance leading-relaxed max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-white/80 mb-8 text-balance leading-relaxed max-w-2xl mx-auto">
             A warm, supportive community for girls centered on quarterly wellness challenges,
             mindful movement, and meaningful connection.
           </p>
@@ -30,7 +37,7 @@ export default function Home() {
             </Link>
             <Link
               href="/how-we-do-it"
-              className="inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground px-8 py-4 rounded-full hover:bg-secondary/80 transition-all border-2 border-primary/20 text-lg font-semibold"
+              className="inline-flex items-center justify-center gap-2 bg-white/20 text-white px-8 py-4 rounded-full hover:bg-white/30 transition-all border-2 border-white/40 text-lg font-semibold backdrop-blur-sm"
             >
               Learn How We Work
             </Link>
@@ -50,7 +57,6 @@ export default function Home() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Yoga Challenge */}
             <div className="bg-card rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow">
               <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
                 <span className="text-3xl">🧘</span>
@@ -61,7 +67,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Pilates Challenge */}
             <div className="bg-card rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow">
               <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
                 <span className="text-3xl">💪</span>
@@ -72,7 +77,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Rope Skipping */}
             <div className="bg-card rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow">
               <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
                 <span className="text-3xl">⛹️</span>
@@ -83,7 +87,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Steps Challenge */}
             <div className="bg-card rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow">
               <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
                 <span className="text-3xl">👟</span>
@@ -201,30 +204,22 @@ export default function Home() {
             <div className="bg-card rounded-2xl p-8 text-center">
               <div className="text-5xl mb-4">✨</div>
               <h3 className="text-2xl font-bold text-foreground mb-3">Consistency</h3>
-              <p className="text-foreground/70">
-                Showing up for yourself and each other, no matter what.
-              </p>
+              <p className="text-foreground/70">Showing up for yourself and each other, no matter what.</p>
             </div>
             <div className="bg-card rounded-2xl p-8 text-center">
               <div className="text-5xl mb-4">⚖️</div>
               <h3 className="text-2xl font-bold text-foreground mb-3">Balance</h3>
-              <p className="text-foreground/70">
-                Honoring both strength and softness in our wellness journeys.
-              </p>
+              <p className="text-foreground/70">Honoring both strength and softness in our wellness journeys.</p>
             </div>
             <div className="bg-card rounded-2xl p-8 text-center">
               <div className="text-5xl mb-4">🤲</div>
               <h3 className="text-2xl font-bold text-foreground mb-3">Accountability</h3>
-              <p className="text-foreground/70">
-                Supporting each other to reach our goals and celebrate wins.
-              </p>
+              <p className="text-foreground/70">Supporting each other to reach our goals and celebrate wins.</p>
             </div>
             <div className="bg-card rounded-2xl p-8 text-center">
               <div className="text-5xl mb-4">💝</div>
               <h3 className="text-2xl font-bold text-foreground mb-3">Sisterhood</h3>
-              <p className="text-foreground/70">
-                Creating a safe, inclusive space where everyone belongs.
-              </p>
+              <p className="text-foreground/70">Creating a safe, inclusive space where everyone belongs.</p>
             </div>
           </div>
         </div>
