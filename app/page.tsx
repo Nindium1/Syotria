@@ -57,44 +57,52 @@ export default function Home() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-card rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
-                <span className="text-3xl">🧘</span>
+            <div className="bg-card rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+              <div className="h-48 overflow-hidden">
+                <img src="/yoga.jpg" alt="Yoga Challenge" className="w-full h-full object-cover" />
               </div>
-              <h3 className="text-2xl font-bold text-foreground mb-2">Yoga Challenge</h3>
-              <p className="text-foreground/70 text-sm">
-                Q1 & Q3: Mindful movement and flexibility through guided yoga practices.
-              </p>
+              <div className="p-8">
+                <h3 className="text-2xl font-bold text-foreground mb-2">Yoga Challenge</h3>
+                <p className="text-foreground/70 text-sm">
+                  Q1 & Q3: Mindful movement and flexibility through guided yoga practices.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-card rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
-                <span className="text-3xl">💪</span>
+            <div className="bg-card rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+              <div className="h-48 overflow-hidden">
+                <img src="/pilates.jpg" alt="Pilates Challenge" className="w-full h-full object-cover" />
               </div>
-              <h3 className="text-2xl font-bold text-foreground mb-2">Pilates Challenge</h3>
-              <p className="text-foreground/70 text-sm">
-                Q2 & Q4: Core strength and graceful movement for total body wellness.
-              </p>
+              <div className="p-8">
+                <h3 className="text-2xl font-bold text-foreground mb-2">Pilates Challenge</h3>
+                <p className="text-foreground/70 text-sm">
+                  Q2 & Q4: Core strength and graceful movement for total body wellness.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-card rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
-                <span className="text-3xl">⛹️</span>
+            <div className="bg-card rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+              <div className="h-48 overflow-hidden">
+                <img src="/rope-skipping.jpg" alt="Rope Skipping" className="w-full h-full object-cover" />
               </div>
-              <h3 className="text-2xl font-bold text-foreground mb-2">Rope Skipping</h3>
-              <p className="text-foreground/70 text-sm">
-                Month 2 of each quarter: Fun cardio challenge to boost endurance and energy.
-              </p>
+              <div className="p-8">
+                <h3 className="text-2xl font-bold text-foreground mb-2">Rope Skipping</h3>
+                <p className="text-foreground/70 text-sm">
+                  Month 2 of each quarter: Fun cardio challenge to boost endurance and energy.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-card rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
-                <span className="text-3xl">👟</span>
+            <div className="bg-card rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+              <div className="h-48 overflow-hidden">
+                <img src="/steps.jpg" alt="Steps Challenge" className="w-full h-full object-cover" />
               </div>
-              <h3 className="text-2xl font-bold text-foreground mb-2">Steps Challenge</h3>
-              <p className="text-foreground/70 text-sm">
-                Final month: Daily movement and consistency challenge to celebrate progress.
-              </p>
+              <div className="p-8">
+                <h3 className="text-2xl font-bold text-foreground mb-2">Steps Challenge</h3>
+                <p className="text-foreground/70 text-sm">
+                  Final month: Daily movement and consistency challenge to celebrate progress.
+                </p>
+              </div>
             </div>
           </div>
         </div>
