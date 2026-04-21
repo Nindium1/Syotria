@@ -61,9 +61,9 @@ export default function Home() {
               <div className="h-48 overflow-hidden">
                 <img src="/yoga.jpg" alt="Yoga Challenge" className="w-full h-full object-cover" />
               </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-foreground mb-2">Yoga Challenge</h3>
-                <p className="text-foreground/70 text-sm">
+              <div className="px-6 pt-4 pb-6">
+                <h3 className="text-2xl font-bold text-foreground mb-4">Yoga Challenge</h3>
+                <p className="text-foreground/90 text-sm">
                   Q1 & Q3: Mindful movement and flexibility through guided yoga practices.
                 </p>
               </div>
@@ -73,9 +73,9 @@ export default function Home() {
               <div className="h-48 overflow-hidden">
                 <img src="/pilates.jpg" alt="Pilates Challenge" className="w-full h-full object-cover" />
               </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-foreground mb-2">Pilates Challenge</h3>
-                <p className="text-foreground/70 text-sm">
+              <div className="px-6 pt-4 pb-6">
+                <h3 className="text-2xl font-bold text-foreground mb-4">Pilates Challenge</h3>
+                <p className="text-foreground/90 text-sm">
                   Q2 & Q4: Core strength and graceful movement for total body wellness.
                 </p>
               </div>
@@ -85,9 +85,9 @@ export default function Home() {
               <div className="h-48 overflow-hidden">
                 <img src="/rope-skipping.jpg" alt="Rope Skipping" className="w-full h-full object-cover" />
               </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-foreground mb-2">Rope Skipping</h3>
-                <p className="text-foreground/70 text-sm">
+              <div className="px-6 pt-4 pb-6">
+                <h3 className="text-2xl font-bold text-foreground mb-4">Rope Skipping</h3>
+                <p className="text-foreground/90 text-sm">
                   Month 2 of each quarter: Fun cardio challenge to boost endurance and energy.
                 </p>
               </div>
@@ -97,9 +97,9 @@ export default function Home() {
               <div className="h-48 overflow-hidden">
                 <img src="/steps.jpg" alt="Steps Challenge" className="w-full h-full object-cover" />
               </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-foreground mb-2">Steps Challenge</h3>
-                <p className="text-foreground/70 text-sm">
+              <div className="px-6 pt-4 pb-6">
+                <h3 className="text-2xl font-bold text-foreground mb-4">Steps Challenge</h3>
+                <p className="text-foreground/90 text-sm">
                   Final month: Daily movement and consistency challenge to celebrate progress.
                 </p>
               </div>
