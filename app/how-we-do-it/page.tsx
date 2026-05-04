@@ -11,7 +11,6 @@ export default function HowWeDoIt() {
       {/* Hero Section */}
       <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl -z-10"></div>
-
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance leading-tight">
             How <span className="text-primary">Syotria</span> Works
@@ -152,34 +151,46 @@ export default function HowWeDoIt() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <div className="text-6xl mb-6">💪</div>
-              <h3 className="text-3xl font-bold text-foreground mb-4">Workout Challenges</h3>
-              <p className="text-foreground/70 leading-relaxed">
-                Quarterly challenges give structure and motivation. Each challenge is designed
-                to fit your fitness level, and progress is tracked within our community.
-                Consistency builds strength—physical and mental.
-              </p>
+            <div className="bg-card rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+              <div className="h-48 overflow-hidden">
+                <img src="/rope-skipping.jpg" alt="Workout Challenges" className="w-full h-full object-cover" />
+              </div>
+              <div className="px-6 pt-4 pb-6">
+                <h3 className="text-3xl font-bold text-foreground mb-4">Workout Challenges</h3>
+                <p className="text-foreground/90 leading-relaxed">
+                  Quarterly challenges give structure and motivation. Each challenge is designed
+                  to fit your fitness level, and progress is tracked within our community.
+                  Consistency builds strength—physical and mental.
+                </p>
+              </div>
             </div>
 
-            <div>
-              <div className="text-6xl mb-6">💬</div>
-              <h3 className="text-3xl font-bold text-foreground mb-4">Tea Time Hangouts</h3>
-              <p className="text-foreground/70 leading-relaxed">
-                Every two weeks, we gather virtually for open conversations. No topics are
-                off-limits. We talk about what really matters: relationships, health, finances,
-                growth, and life as a girl or woman.
-              </p>
+            <div className="bg-card rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+              <div className="h-48 overflow-hidden">
+                <img src="/tea-time.jpg" alt="Tea Time Hangouts" className="w-full h-full object-cover" />
+              </div>
+              <div className="px-6 pt-4 pb-6">
+                <h3 className="text-3xl font-bold text-foreground mb-4">Tea Time Hangouts</h3>
+                <p className="text-foreground/90 leading-relaxed">
+                  Every two weeks, we gather virtually for open conversations. No topics are
+                  off-limits. We talk about what really matters: relationships, health, finances,
+                  growth, and life as a girl or woman.
+                </p>
+              </div>
             </div>
 
-            <div>
-              <div className="text-6xl mb-6">🤝</div>
-              <h3 className="text-3xl font-bold text-foreground mb-4">In-Person Meetups</h3>
-              <p className="text-foreground/70 leading-relaxed">
-                At the end of every quarter, we gather in person to celebrate, connect, and
-                create memories. These mandatory meetups are where the Syotria magic truly
-                comes alive.
-              </p>
+            <div className="bg-card rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+              <div className="h-48 overflow-hidden">
+                <img src="/in-person-meetups.jpg" alt="In-Person Meetups" className="w-full h-full object-cover" />
+              </div>
+              <div className="px-6 pt-4 pb-6">
+                <h3 className="text-3xl font-bold text-foreground mb-4">In-Person Meetups</h3>
+                <p className="text-foreground/90 leading-relaxed">
+                  At the end of every quarter, we gather in person to celebrate, connect, and
+                  create memories. These mandatory meetups are where the Syotria magic truly
+                  comes alive.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -194,8 +205,8 @@ export default function HowWeDoIt() {
 
           <div className="space-y-8 mt-12">
             <div className="flex gap-6">
-              <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center flex-shrink-0">
-                <span className="text-2xl">✨</span>
+              <div className="w-12 h-12 rounded-2xl overflow-hidden flex-shrink-0">
+                <img src="/Consistency.jpg" alt="Consistency" className="w-full h-full object-cover" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foreground mb-3">Consistency Over Perfection</h3>
@@ -207,8 +218,8 @@ export default function HowWeDoIt() {
             </div>
 
             <div className="flex gap-6">
-              <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center flex-shrink-0">
-                <span className="text-2xl">🌸</span>
+              <div className="w-12 h-12 rounded-2xl overflow-hidden flex-shrink-0">
+                <img src="/balance.jpg" alt="Balance" className="w-full h-full object-cover" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foreground mb-3">Balance and Self-Care</h3>
@@ -221,8 +232,8 @@ export default function HowWeDoIt() {
             </div>
 
             <div className="flex gap-6">
-              <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center flex-shrink-0">
-                <span className="text-2xl">🔗</span>
+              <div className="w-12 h-12 rounded-2xl overflow-hidden flex-shrink-0">
+                <img src="/accountability.jpg" alt="Accountability" className="w-full h-full object-cover" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foreground mb-3">Accountability Through Love</h3>
@@ -234,8 +245,8 @@ export default function HowWeDoIt() {
             </div>
 
             <div className="flex gap-6">
-              <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center flex-shrink-0">
-                <span className="text-2xl">💝</span>
+              <div className="w-12 h-12 rounded-2xl overflow-hidden flex-shrink-0">
+                <img src="/sisterhood.jpg" alt="Sisterhood" className="w-full h-full object-cover" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foreground mb-3">Sisterhood is Sacred</h3>
