@@ -8,32 +8,32 @@ export default function TeaTime() {
     {
       title: 'Reproductive Health',
       description: 'Periods, hormones, mental health, and understanding your body. Real talk from people who get it.',
-      emoji: '🌸',
+      img: '/reproductive-health.jpg',
     },
     {
       title: 'Friendships & Relationships',
       description: 'Navigating friendships, toxic dynamics, breakups, and building healthy connections.',
-      emoji: '👯',
+      img: '/friendships.jpg',
     },
     {
       title: 'Finances',
       description: 'Money mindset, saving, investing, independence, and making smart financial choices.',
-      emoji: '💰',
+      img: '/finances.jpg',
     },
     {
       title: 'Self-Growth & Manifestation',
       description: 'Dreams, goals, manifestation, therapy, personal development, and becoming your best self.',
-      emoji: '✨',
+      img: '/self-growth.jpg',
     },
     {
       title: 'Career & Education',
       description: 'Job hunting, workplace challenges, education goals, and building your future.',
-      emoji: '🎯',
+      img: '/career.jpg',
     },
     {
       title: 'Mental Health & Wellness',
       description: 'Anxiety, stress, self-care, therapy, and supporting each other through hard times.',
-      emoji: '🧠',
+      img: '/mental-health.jpg',
     },
   ]
 
@@ -42,14 +42,20 @@ export default function TeaTime() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl -z-10"></div>
-
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance leading-tight">
+      <section
+        className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
+        style={{
+          backgroundImage: 'url(/tea-time-hero.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="max-w-4xl mx-auto text-center relative z-10">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 text-balance leading-tight">
             Tea Time <span className="text-primary">☕</span>
           </h1>
-          <p className="text-xl md:text-2xl text-foreground/70 mb-8 text-balance leading-relaxed max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-white/80 mb-8 text-balance leading-relaxed max-w-2xl mx-auto">
             Every two weeks, we gather virtually for honest, open conversations about life,
             growth, and what it means to be a girl or woman in the world today.
           </p>
@@ -78,8 +84,8 @@ export default function TeaTime() {
                 </p>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl h-80 flex items-center justify-center">
-              <span className="text-7xl">☕</span>
+            <div className="rounded-3xl h-80 overflow-hidden">
+              <img src="/tea-time.jpg" alt="Tea Time" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
@@ -99,11 +105,15 @@ export default function TeaTime() {
             {topics.map((topic) => (
               <div
                 key={topic.title}
-                className="bg-card rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow"
+                className="bg-card rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="text-5xl mb-4">{topic.emoji}</div>
-                <h3 className="text-2xl font-bold text-foreground mb-3">{topic.title}</h3>
-                <p className="text-foreground/70">{topic.description}</p>
+                <div className="h-48 overflow-hidden">
+                  <img src={topic.img} alt={topic.title} className="w-full h-full object-cover" />
+                </div>
+                <div className="px-6 pt-4 pb-6">
+                  <h3 className="text-2xl font-bold text-foreground mb-3">{topic.title}</h3>
+                  <p className="text-foreground/90 text-sm">{topic.description}</p>
+                </div>
               </div>
             ))}
           </div>
