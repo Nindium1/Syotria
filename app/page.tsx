@@ -17,9 +17,7 @@ export default function Home() {
           backgroundPosition: 'center',
         }}
       >
-        {/* Dark overlay for readability */}
         <div className="absolute inset-0 bg-black/50"></div>
-
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 text-balance leading-tight">
             Welcome to <span className="text-primary">Syotria</span>
@@ -52,10 +50,8 @@ export default function Home() {
             Our Quarterly Challenges
           </h2>
           <p className="text-center text-foreground/70 mb-16 text-lg max-w-2xl mx-auto">
-            Each quarter, we come together for 90 days of consistent movement, growth, and
-            sisterhood.
+            Each quarter, we come together for 90 days of consistent movement, growth, and sisterhood.
           </p>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-card rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <div className="h-48 overflow-hidden">
@@ -68,7 +64,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-
             <div className="bg-card rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <div className="h-48 overflow-hidden">
                 <img src="/pilates.jpg" alt="Pilates Challenge" className="w-full h-full object-cover" />
@@ -80,7 +75,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-
             <div className="bg-card rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <div className="h-48 overflow-hidden">
                 <img src="/rope-skipping.jpg" alt="Rope Skipping" className="w-full h-full object-cover" />
@@ -92,7 +86,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-
             <div className="bg-card rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <div className="h-48 overflow-hidden">
                 <img src="/steps.jpg" alt="Steps Challenge" className="w-full h-full object-cover" />
@@ -154,8 +147,8 @@ export default function Home() {
               </Link>
             </div>
             <div className="rounded-3xl h-96 overflow-hidden">
-  <img src="/tea-time.jpg" alt="Tea Time" className="w-full h-full object-cover" />
-</div>
+              <img src="/tea-time.jpg" alt="Tea Time" className="w-full h-full object-cover" />
+            </div>
           </div>
         </div>
       </section>
@@ -165,8 +158,8 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="rounded-3xl h-96 overflow-hidden order-2 md:order-1">
-  <img src="/meetups.jpg" alt="In-Person Meetups" className="w-full h-full object-cover" />
-</div>
+              <img src="/meetups.jpg" alt="In-Person Meetups" className="w-full h-full object-cover" />
+            </div>
             <div className="order-1 md:order-2">
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
                 In-Person Meetups: The Syotria Experience
@@ -207,27 +200,42 @@ export default function Home() {
           <p className="text-center text-foreground/70 mb-16 text-lg max-w-2xl mx-auto">
             <span className="text-primary">Syotria</span> is built on four pillars that guide everything we do.
           </p>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-card rounded-2xl p-8 text-center">
-              <div className="text-5xl mb-4">✨</div>
-              <h3 className="text-2xl font-bold text-foreground mb-3">Consistency</h3>
-              <p className="text-foreground/70">Showing up for yourself and each other, no matter what.</p>
+            <div className="bg-card rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+              <div className="h-48 overflow-hidden">
+                <img src="/Consistency.jpg" alt="Consistency" className="w-full h-full object-cover" />
+              </div>
+              <div className="px-6 pt-4 pb-6 text-center">
+                <h3 className="text-2xl font-bold text-foreground mb-4">Consistency</h3>
+                <p className="text-foreground/90 text-sm">Showing up for yourself and each other, no matter what.</p>
+              </div>
             </div>
-            <div className="bg-card rounded-2xl p-8 text-center">
-              <div className="text-5xl mb-4">⚖️</div>
-              <h3 className="text-2xl font-bold text-foreground mb-3">Balance</h3>
-              <p className="text-foreground/70">Honoring both strength and softness in our wellness journeys.</p>
+            <div className="bg-card rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+              <div className="h-48 overflow-hidden">
+                <img src="/balance.jpg" alt="Balance" className="w-full h-full object-cover" />
+              </div>
+              <div className="px-6 pt-4 pb-6 text-center">
+                <h3 className="text-2xl font-bold text-foreground mb-4">Balance</h3>
+                <p className="text-foreground/90 text-sm">Honoring both strength and softness in our wellness journeys.</p>
+              </div>
             </div>
-            <div className="bg-card rounded-2xl p-8 text-center">
-              <div className="text-5xl mb-4">🤲</div>
-              <h3 className="text-2xl font-bold text-foreground mb-3">Accountability</h3>
-              <p className="text-foreground/70">Supporting each other to reach our goals and celebrate wins.</p>
+            <div className="bg-card rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+              <div className="h-48 overflow-hidden">
+                <img src="/accountability.jpg" alt="Accountability" className="w-full h-full object-cover" />
+              </div>
+              <div className="px-6 pt-4 pb-6 text-center">
+                <h3 className="text-2xl font-bold text-foreground mb-4">Accountability</h3>
+                <p className="text-foreground/90 text-sm">Supporting each other to reach our goals and celebrate wins.</p>
+              </div>
             </div>
-            <div className="bg-card rounded-2xl p-8 text-center">
-              <div className="text-5xl mb-4">💝</div>
-              <h3 className="text-2xl font-bold text-foreground mb-3">Sisterhood</h3>
-              <p className="text-foreground/70">Creating a safe, inclusive space where everyone belongs.</p>
+            <div className="bg-card rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+              <div className="h-48 overflow-hidden">
+                <img src="/sisterhood.jpg" alt="Sisterhood" className="w-full h-full object-cover" />
+              </div>
+              <div className="px-6 pt-4 pb-6 text-center">
+                <h3 className="text-2xl font-bold text-foreground mb-4">Sisterhood</h3>
+                <p className="text-foreground/90 text-sm">Creating a safe, inclusive space where everyone belongs.</p>
+              </div>
             </div>
           </div>
         </div>
