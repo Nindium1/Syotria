@@ -25,7 +25,8 @@ export default function Resources() {
       title: 'Beginner-Friendly Yoga Playlist',
       description:
         'Calming, accessible yoga flows perfect for all levels. A gentle way to build strength and flexibility at your own pace.',
-      img: '/yoga.jpg',
+      img: null,
+      embedPlaylist: 'PLEs9dX8UXFZpD4n4gS-Upe-DcR0z3_9NE',
       link: 'https://www.youtube.com/playlist?list=PLEs9dX8UXFZpD4n4gS-Upe-DcR0z3_9NE',
       type: 'youtube',
     },
@@ -33,7 +34,8 @@ export default function Resources() {
       title: 'Beginner-Friendly Pilates Playlist',
       description:
         'Core-strengthening, grace-focused pilates workouts. Designed for beginners to build confidence and consistency.',
-      img: '/pilates.jpg',
+      img: null,
+      embedPlaylist: 'PL6F8elYp4eOFCIMT4EzJbWX8llDIRqtyq',
       link: 'https://www.youtube.com/playlist?list=PL6F8elYp4eOFCIMT4EzJbWX8llDIRqtyq',
       type: 'youtube',
     },
@@ -96,7 +98,17 @@ export default function Resources() {
                 className="bg-card rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
               >
                 <div className="h-48 overflow-hidden">
-                  <img src={playlist.img} alt={playlist.title} className="w-full h-full object-cover" />
+                  {playlist.embedPlaylist ? (
+                    <iframe
+                      src={`https://www.youtube.com/embed/videoseries?list=${playlist.embedPlaylist}`}
+                      title={playlist.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="w-full h-full"
+                    />
+                  ) : (
+                    <img src={playlist.img!} alt={playlist.title} className="w-full h-full object-cover" />
+                  )}
                 </div>
                 <div className="p-8">
                   <h3 className="text-2xl font-bold text-foreground mb-2">{playlist.title}</h3>
@@ -165,7 +177,7 @@ export default function Resources() {
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-secondary/30">
         <div className="max-w-4xl mx-auto text-center">
           <div className="h-64 rounded-3xl overflow-hidden mb-8 max-w-2xl mx-auto">
-            <img src="/accountability.jpg" alt="Show Up at Your Own Pace" className="w-full h-full object-cover" />
+            <img src="/balance.jpg" alt="Show Up at Your Own Pace" className="w-full h-full object-cover" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Show Up at Your Own Pace
