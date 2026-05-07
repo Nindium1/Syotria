@@ -9,29 +9,33 @@ export default function Resources() {
       title: 'Rope-Skipping Playlist',
       description:
         'High-energy beats to keep you motivated during your rope-skipping challenge. Perfect for building momentum and staying consistent.',
-      icon: '🎵',
-      emoji: '⛹️',
+      img: '/rope-skipping.jpg',
+      link: 'https://open.spotify.com/playlist/10Tjj2w3jYaLzyOVNdR5V3',
+      type: 'spotify',
     },
     {
       title: 'Walking & Steps Challenge Playlist',
       description:
         'Uplifting music to accompany your daily steps. Great for walks, outdoor movement, and keeping the energy high.',
-      icon: '🎵',
-      emoji: '👟',
+      img: '/steps.jpg',
+      link: 'https://open.spotify.com/playlist/7dRr5Rq9MrlEgX9N5qOjLx',
+      type: 'spotify',
     },
     {
       title: 'Beginner-Friendly Yoga Playlist',
       description:
         'Calming, accessible yoga flows perfect for all levels. A gentle way to build strength and flexibility at your own pace.',
-      icon: '🎵',
-      emoji: '🧘',
+      img: '/yoga.jpg',
+      link: 'https://www.youtube.com/playlist?list=PLEs9dX8UXFZpD4n4gS-Upe-DcR0z3_9NE',
+      type: 'youtube',
     },
     {
       title: 'Beginner-Friendly Pilates Playlist',
       description:
         'Core-strengthening, grace-focused pilates workouts. Designed for beginners to build confidence and consistency.',
-      icon: '🎵',
-      emoji: '💪',
+      img: '/pilates.jpg',
+      link: 'https://www.youtube.com/playlist?list=PL6F8elYp4eOFCIMT4EzJbWX8llDIRqtyq',
+      type: 'youtube',
     },
   ]
 
@@ -39,14 +43,20 @@ export default function Resources() {
     {
       title: 'Your Journey Matters',
       description: 'A reminder that showing up for yourself is everything.',
+      link: 'https://www.youtube.com/watch?v=5XhfNHswGsU',
+      embedId: '5XhfNHswGsU',
     },
     {
-      title: 'Sisterhood in Motion',
+      title: 'Showing up for Yourself',
       description: 'How Syotria members support and lift each other up.',
+      link: 'https://www.youtube.com/watch?v=K9QmqNokV3E',
+      embedId: 'K9QmqNokV3E',
     },
     {
       title: 'The Power of Consistency',
       description: 'Small steps, big transformations. Your story of growth.',
+      link: 'https://www.youtube.com/watch?v=hNO1qYWg8bc',
+      embedId: 'hNO1qYWg8bc',
     },
   ]
 
@@ -57,7 +67,6 @@ export default function Resources() {
       {/* Hero Section */}
       <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl -z-10"></div>
-
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance leading-tight">
             Resources for Your Wellness Journey
@@ -84,21 +93,24 @@ export default function Resources() {
             {playlists.map((playlist, index) => (
               <div
                 key={index}
-                className="bg-card rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow"
+                className="bg-card rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="text-5xl">{playlist.emoji}</div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-foreground mb-2">
-                      {playlist.title}
-                    </h3>
-                    <p className="text-foreground/70">{playlist.description}</p>
-                  </div>
+                <div className="h-48 overflow-hidden">
+                  <img src={playlist.img} alt={playlist.title} className="w-full h-full object-cover" />
                 </div>
-                <button className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all mt-4">
-                  <Music className="w-5 h-5" />
-                  Listen on Spotify
-                </button>
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold text-foreground mb-2">{playlist.title}</h3>
+                  <p className="text-foreground/70 mb-4">{playlist.description}</p>
+                  <a
+                    href={playlist.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+                  >
+                    <Music className="w-5 h-5" />
+                    {playlist.type === 'spotify' ? 'Listen on Spotify' : 'Watch on YouTube'}
+                  </a>
+                </div>
               </div>
             ))}
           </div>
@@ -121,16 +133,27 @@ export default function Resources() {
                 key={index}
                 className="bg-card rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="bg-gradient-to-br from-primary/10 to-accent/10 h-48 flex items-center justify-center">
-                  <Play className="w-16 h-16 text-primary/50" />
+                <div className="relative h-48">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${video.embedId}`}
+                    title={video.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-foreground mb-2">{video.title}</h3>
                   <p className="text-foreground/70 text-sm mb-4">{video.description}</p>
-                  <button className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">
+                  <a
+                    href={video.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+                  >
                     <Play className="w-4 h-4" />
-                    Watch Video
-                  </button>
+                    Watch on YouTube
+                  </a>
                 </div>
               </div>
             ))}
@@ -141,7 +164,9 @@ export default function Resources() {
       {/* Encouragement Section */}
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-secondary/30">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="text-6xl mb-6">✨</div>
+          <div className="h-64 rounded-3xl overflow-hidden mb-8 max-w-2xl mx-auto">
+            <img src="/accountability.jpg" alt="Show Up at Your Own Pace" className="w-full h-full object-cover" />
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Show Up at Your Own Pace
           </h2>
