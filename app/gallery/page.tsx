@@ -3,17 +3,17 @@ import Footer from '@/components/footer'
 
 export default function Gallery() {
   const galleryItems = [
-    { id: 1, img: '/syotria1.jpg', title: 'Syotria Moments', caption: 'Finding strength in stillness' },
-    { id: 2, img: '/syotria2.jpg', title: 'Syotria Moments', caption: 'Core strength and grace' },
-    { id: 3, img: '/syotria3.jpg', title: 'Syotria Moments', caption: 'Building momentum together' },
-    { id: 4, img: '/syotria4.jpg', title: 'Syotria Moments', caption: 'Every step counts' },
-    { id: 5, img: '/syotria5.jpg', title: 'Syotria Moments', caption: 'Open conversations, real connections' },
-    { id: 6, img: '/syotria6.jpg', title: 'Syotria Moments', caption: 'Sisterhood in real time' },
-    { id: 7, img: '/syotria7.jpg', title: 'Syotria Moments', caption: 'Where the magic happens' },
-    { id: 8, img: '/syotria8.jpg', title: 'Syotria Moments', caption: 'Celebrating consistency and growth' },
-    { id: 9, img: '/syotria9.jpg', title: 'Syotria Moments', caption: 'Building bonds that last' },
-    { id: 10, img: '/syotria10.jpg', title: 'Syotria Moments', caption: 'Starting the day together' },
-    { id: 11, img: '/syotria11.jpg', title: 'Syotria Moments', caption: 'Moving together, growing together' },
+    { id: 1, img: '/syotria1.png', title: 'Syotria Moments', caption: 'Finding strength in stillness' },
+    { id: 2, img: '/syotria2.png', title: 'Syotria Moments', caption: 'Core strength and grace' },
+    { id: 3, img: '/syotria3.png', title: 'Syotria Moments', caption: 'Building momentum together' },
+    { id: 4, img: '/syotria4.png', title: 'Syotria Moments', caption: 'Every step counts' },
+    { id: 5, img: '/syotria5.png', title: 'Syotria Moments', caption: 'Open conversations, real connections' },
+    { id: 6, img: '/syotria6.png', title: 'Syotria Moments', caption: 'Sisterhood in real time' },
+    { id: 7, img: '/syotria7.png', title: 'Syotria Moments', caption: 'Where the magic happens' },
+    { id: 8, img: '/syotria8.png', title: 'Syotria Moments', caption: 'Celebrating consistency and growth' },
+    { id: 9, img: '/syotria9.png', title: 'Syotria Moments', caption: 'Building bonds that last' },
+    { id: 10, img: '/syotria10.png', title: 'Syotria Moments', caption: 'Starting the day together' },
+    { id: 11, img: '/syotria11.png', title: 'Syotria Moments', caption: 'Moving together, growing together' },
   ]
 
   return (
