@@ -150,6 +150,17 @@ export default function HowWeDoIt() {
             Every part of the Syotria experience rests on these three foundations.
           </p>
 
+          {/* Membership Fee Note */}
+          <div className="bg-primary/10 border-2 border-primary/30 rounded-3xl p-8 text-center mb-12">
+            <h3 className="text-2xl font-bold text-foreground mb-3">Membership Fee</h3>
+            <p className="text-foreground/70 leading-relaxed max-w-2xl mx-auto">
+              Participating in Syotria requires a quarterly membership fee of{' '}
+              <span className="font-bold text-primary">KES 1,000</span>. This sustains our
+              community by covering shared resources, in-person meetup costs, and community
+              activities.
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-card rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <div className="h-48 overflow-hidden">
