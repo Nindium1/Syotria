@@ -52,11 +52,10 @@ export default function JoinUs() {
         <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl -z-10"></div>
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance leading-tight">
-            Join <span className="text-primary">Syotria</span>
+            Register Your Interest
           </h1>
           <p className="text-xl md:text-2xl text-foreground/70 mb-8 text-balance leading-relaxed max-w-2xl mx-auto">
-            You belong here. Let's move, grow, and thrive together in a community built for girls
-            like you.
+            We welcome new members at the start of each quarter. Register your interest and we'll be in touch when the next intake opens.
           </p>
         </div>
       </section>
@@ -222,16 +221,18 @@ export default function JoinUs() {
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-secondary/30">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
-            {isSubmitted ? 'Welcome to Syotria!' : "Let's Get Started"}
+            {isSubmitted ? 'Thank You for Your Interest!' : "Register Your Interest"}
           </h2>
+          <p className="text-center text-foreground/70 mb-8">
+            Fill in the form below and we'll reach out when the next intake opens.
+          </p>
 
           {isSubmitted ? (
             <div className="bg-card rounded-3xl p-8 md:p-12 text-center border-2 border-primary">
               <div className="text-6xl mb-4">🎉</div>
-              <h3 className="text-3xl font-bold text-foreground mb-4">Thank You for Joining!</h3>
+              <h3 className="text-3xl font-bold text-foreground mb-4">Interest Registered!</h3>
               <p className="text-foreground/70 text-lg mb-6">
-                We're so excited to welcome you to the Syotria community. Check your email for next
-                steps and information about our upcoming challenges and Tea Time sessions.
+                Thank you for your interest in Syotria! We'll be in touch when the next intake opens. Keep an eye on your inbox for updates.
               </p>
               <p className="text-foreground/70 mb-6">
                 If you have any questions, reach out to us anytime. We're here to support you.
@@ -321,13 +322,14 @@ export default function JoinUs() {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-semibold text-foreground mb-2">
-                  What brings you to Syotria? (Optional)
+                  Why do you want to join us?
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
+                  required
                   className="w-full px-4 py-3 rounded-2xl bg-input border-2 border-border focus:border-primary focus:outline-none transition-colors resize-none h-24"
                   placeholder="Tell us what you're looking for in a community..."
                 />
@@ -337,7 +339,7 @@ export default function JoinUs() {
                 type="submit"
                 className="w-full bg-primary text-primary-foreground py-4 rounded-full hover:bg-primary/90 transition-all hover:shadow-lg font-semibold text-lg flex items-center justify-center gap-2"
               >
-                Join Syotria <ArrowRight className="w-5 h-5" />
+                Register My Interest <ArrowRight className="w-5 h-5" />
               </button>
 
               <p className="text-center text-foreground/60 text-sm">
