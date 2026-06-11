@@ -30,7 +30,6 @@ export default function JoinUs() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // In a real app, you'd send this data to a backend
     setIsSubmitted(true)
     setTimeout(() => {
       setFormData({
@@ -51,7 +50,6 @@ export default function JoinUs() {
       {/* Hero Section */}
       <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl -z-10"></div>
-
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance leading-tight">
             Join <span className="text-primary">Syotria</span>
@@ -78,9 +76,7 @@ export default function JoinUs() {
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                 <CheckCircle className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-2">
-                Structured Challenges
-              </h3>
+              <h3 className="text-xl font-bold text-foreground mb-2">Structured Challenges</h3>
               <p className="text-foreground/70">
                 Quarterly challenges designed to build consistency, strength, and confidence.
               </p>
@@ -122,9 +118,7 @@ export default function JoinUs() {
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                 <CheckCircle className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-2">
-                Inclusive Wellness
-              </h3>
+              <h3 className="text-xl font-bold text-foreground mb-2">Inclusive Wellness</h3>
               <p className="text-foreground/70">
                 No judgment about fitness level, body type, or experience. Everyone is welcome.
               </p>
@@ -159,33 +153,23 @@ export default function JoinUs() {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold">✓</span>
-                  <span className="text-foreground/80">
-                    You want consistent structure and accountability
-                  </span>
+                  <span className="text-foreground/80">You want consistent structure and accountability</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold">✓</span>
-                  <span className="text-foreground/80">
-                    You're looking for genuine friendships with other girls
-                  </span>
+                  <span className="text-foreground/80">You're looking for genuine friendships with other girls</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold">✓</span>
-                  <span className="text-foreground/80">
-                    You value wellness beyond just exercise
-                  </span>
+                  <span className="text-foreground/80">You value wellness beyond just exercise</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold">✓</span>
-                  <span className="text-foreground/80">
-                    You're open to talking about real life issues
-                  </span>
+                  <span className="text-foreground/80">You're open to talking about real life issues</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold">✓</span>
-                  <span className="text-foreground/80">
-                    You want to show up for other girls too
-                  </span>
+                  <span className="text-foreground/80">You want to show up for other girls too</span>
                 </li>
               </ul>
             </div>
@@ -195,33 +179,23 @@ export default function JoinUs() {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold">♡</span>
-                  <span className="text-foreground/80">
-                    Commit to quarterly challenges and consistency
-                  </span>
+                  <span className="text-foreground/80">Commit to quarterly challenges and consistency</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold">♡</span>
-                  <span className="text-foreground/80">
-                    Attend quarterly in-person meetups (mandatory)
-                  </span>
+                  <span className="text-foreground/80">Attend quarterly in-person meetups (mandatory)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold">♡</span>
-                  <span className="text-foreground/80">
-                    Participate in Tea Time and community spaces when you can
-                  </span>
+                  <span className="text-foreground/80">Participate in Tea Time and community spaces when you can</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold">♡</span>
-                  <span className="text-foreground/80">
-                    Keep conversations confidential and respectful
-                  </span>
+                  <span className="text-foreground/80">Keep conversations confidential and respectful</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold">♡</span>
-                  <span className="text-foreground/80">
-                    Show up with authenticity and kindness
-                  </span>
+                  <span className="text-foreground/80">Show up with authenticity and kindness</span>
                 </li>
               </ul>
             </div>
@@ -229,19 +203,32 @@ export default function JoinUs() {
         </div>
       </section>
 
+      {/* Membership Fee Notice */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-2xl mx-auto">
+          <div className="bg-primary/10 border-2 border-primary/30 rounded-3xl p-8 text-center">
+            <h3 className="text-2xl font-bold text-foreground mb-3">Membership Fee</h3>
+            <p className="text-foreground/70 leading-relaxed">
+              Syotria membership requires a quarterly fee of{' '}
+              <span className="font-bold text-primary">KES 1,000</span>. This helps us sustain and
+              grow the community — covering shared resources, in-person meetup costs, and community
+              activities. Payment details will be shared once your application is reviewed.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Signup Form */}
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-secondary/30">
         <div className="max-w-2xl mx-auto">
-              <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
-            {isSubmitted ? 'Welcome to <span className="text-primary">Syotria</span>!' : 'Let\'s Get Started'}
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
+            {isSubmitted ? 'Welcome to Syotria!' : "Let's Get Started"}
           </h2>
 
           {isSubmitted ? (
             <div className="bg-card rounded-3xl p-8 md:p-12 text-center border-2 border-primary">
               <div className="text-6xl mb-4">🎉</div>
-              <h3 className="text-3xl font-bold text-foreground mb-4">
-                Thank You for Joining!
-              </h3>
+              <h3 className="text-3xl font-bold text-foreground mb-4">Thank You for Joining!</h3>
               <p className="text-foreground/70 text-lg mb-6">
                 We're so excited to welcome you to the Syotria community. Check your email for next
                 steps and information about our upcoming challenges and Tea Time sessions.
@@ -312,10 +299,7 @@ export default function JoinUs() {
                 </div>
 
                 <div>
-                  <label
-                    htmlFor="fitnessLevel"
-                    className="block text-sm font-semibold text-foreground mb-2"
-                  >
+                  <label htmlFor="fitnessLevel" className="block text-sm font-semibold text-foreground mb-2">
                     Fitness Level
                   </label>
                   <select
@@ -336,10 +320,7 @@ export default function JoinUs() {
               </div>
 
               <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-semibold text-foreground mb-2"
-                >
+                <label htmlFor="message" className="block text-sm font-semibold text-foreground mb-2">
                   What brings you to Syotria? (Optional)
                 </label>
                 <textarea
@@ -382,10 +363,7 @@ export default function JoinUs() {
             <div className="text-center">
               <div className="text-4xl mb-4">📧</div>
               <h3 className="font-semibold text-foreground mb-2">Email Us</h3>
-              <a
-                href="mailto:hello@syotria.com"
-                className="text-primary hover:text-primary/80 transition-colors"
-              >
+              <a href="mailto:hello@syotria.com" className="text-primary hover:text-primary/80 transition-colors">
                 hello@syotria.com
               </a>
             </div>
