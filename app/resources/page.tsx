@@ -67,12 +67,9 @@ export default function Resources() {
       <Navigation />
 
       {/* Hero Section */}
-      <section
-  className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
-  style={{ backgroundImage: 'url(/resources-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
->
-  <div className="absolute inset-0 bg-black/50"></div>
-  <div className="max-w-4xl mx-auto text-center relative z-10">
+     <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+  <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl -z-10"></div>
+  <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance leading-tight">
             Resources for Your Wellness Journey
           </h1>
