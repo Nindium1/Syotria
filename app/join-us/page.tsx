@@ -52,10 +52,11 @@ export default function JoinUs() {
         <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl -z-10"></div>
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance leading-tight">
-            Register Your Interest
+            Join <span className="text-primary">Syotria</span>
           </h1>
           <p className="text-xl md:text-2xl text-foreground/70 mb-8 text-balance leading-relaxed max-w-2xl mx-auto">
-            We welcome new members at the start of each quarter. Register your interest and we'll be in touch when the next intake opens.
+            You belong here. Let's move, grow, and thrive together in a community built for girls
+            like you.
           </p>
         </div>
       </section>
@@ -339,7 +340,7 @@ export default function JoinUs() {
                 type="submit"
                 className="w-full bg-primary text-primary-foreground py-4 rounded-full hover:bg-primary/90 transition-all hover:shadow-lg font-semibold text-lg flex items-center justify-center gap-2"
               >
-                Register My Interest <ArrowRight className="w-5 h-5" />
+                Register <ArrowRight className="w-5 h-5" />
               </button>
 
               <p className="text-center text-foreground/60 text-sm">
