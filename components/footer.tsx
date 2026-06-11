@@ -47,16 +47,6 @@ export default function Footer() {
                   Join Us
                 </Link>
               </li>
-              <li>
-                <a href="#" className="text-foreground/70 hover:text-primary transition-colors">
-                  Waitlist
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-foreground/70 hover:text-primary transition-colors">
-                  FAQ
-                </a>
-              </li>
             </ul>
           </div>
 
