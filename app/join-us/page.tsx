@@ -363,24 +363,24 @@ export default function JoinUs() {
             <div className="text-center">
               <div className="text-4xl mb-4">📧</div>
               <h3 className="font-semibold text-foreground mb-2">Email Us</h3>
-              <a href="mailto:hello@syotria.com" className="text-primary hover:text-primary/80 transition-colors">
-                hello@syotria.com
+              <a href="mailto:slaystretchsquad@gmail.com" className="text-primary hover:text-primary/80 transition-colors">
+                slaystretchsquad@gmail.com
               </a>
             </div>
 
             <div className="text-center">
               <div className="text-4xl mb-4">📱</div>
               <h3 className="font-semibold text-foreground mb-2">DM on Instagram</h3>
-              <a href="#" className="text-primary hover:text-primary/80 transition-colors">
-                @syotria
+              <a href="https://www.instagram.com/syotriawellness/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors">
+                @syotriawellness
               </a>
             </div>
 
             <div className="text-center">
               <div className="text-4xl mb-4">💬</div>
               <h3 className="font-semibold text-foreground mb-2">Chat with Us</h3>
-              <a href="#" className="text-primary hover:text-primary/80 transition-colors">
-                Start a conversation
+              <a href="https://wa.me/254748416553" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors">
+                WhatsApp Us
               </a>
             </div>
           </div>
