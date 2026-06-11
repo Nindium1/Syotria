@@ -1,48 +1,12 @@
 'use client'
 
 import React from "react"
-
 import Navigation from '@/components/navigation'
 import Footer from '@/components/footer'
 import Link from 'next/link'
-import { useState } from 'react'
 import { CheckCircle, ArrowRight } from 'lucide-react'
 
 export default function JoinUs() {
-  const [isSubmitted, setIsSubmitted] = useState(false)
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    age: '',
-    fitnessLevel: '',
-    message: '',
-  })
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>,
-  ) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }))
-  }
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitted(true)
-    setTimeout(() => {
-      setFormData({
-        name: '',
-        email: '',
-        age: '',
-        fitnessLevel: '',
-        message: '',
-      })
-      setIsSubmitted(false)
-    }, 5000)
-  }
-
   return (
     <main className="min-h-screen bg-background">
       <Navigation />
@@ -222,133 +186,108 @@ export default function JoinUs() {
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-secondary/30">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
-            {isSubmitted ? 'Thank You for Your Interest!' : "Register Your Interest"}
+            Register Your Interest
           </h2>
           <p className="text-center text-foreground/70 mb-8">
-            Fill in the form below and we'll reach out when the next intake opens.
+            We welcome new members at the start of each quarter. Register your interest and we'll be in touch when the next intake opens.
           </p>
 
-          {isSubmitted ? (
-            <div className="bg-card rounded-3xl p-8 md:p-12 text-center border-2 border-primary">
-              <div className="text-6xl mb-4">🎉</div>
-              <h3 className="text-3xl font-bold text-foreground mb-4">Interest Registered!</h3>
-              <p className="text-foreground/70 text-lg mb-6">
-                Thank you for your interest in Syotria! We'll be in touch when the next intake opens. Keep an eye on your inbox for updates.
-              </p>
-              <p className="text-foreground/70 mb-6">
-                If you have any questions, reach out to us anytime. We're here to support you.
-              </p>
-              <Link
-                href="/"
-                className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full hover:bg-primary/90 transition-colors font-semibold"
-              >
-                Back to Home
-              </Link>
+          <form
+            action="https://formspree.io/f/xrevakbn"
+            method="POST"
+            className="bg-card rounded-3xl p-8 md:p-12 space-y-6"
+          >
+            <div>
+              <label htmlFor="name" className="block text-sm font-semibold text-foreground mb-2">
+                Your Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                className="w-full px-4 py-3 rounded-2xl bg-input border-2 border-border focus:border-primary focus:outline-none transition-colors"
+                placeholder="Tell us your name"
+              />
             </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="bg-card rounded-3xl p-8 md:p-12 space-y-6">
+
+            <div>
+              <label htmlFor="email" className="block text-sm font-semibold text-foreground mb-2">
+                Email Address
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                className="w-full px-4 py-3 rounded-2xl bg-input border-2 border-border focus:border-primary focus:outline-none transition-colors"
+                placeholder="your.email@example.com"
+              />
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-foreground mb-2">
-                  Your Name
+                <label htmlFor="age" className="block text-sm font-semibold text-foreground mb-2">
+                  Age Range
                 </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
+                <select
+                  id="age"
+                  name="age"
                   required
                   className="w-full px-4 py-3 rounded-2xl bg-input border-2 border-border focus:border-primary focus:outline-none transition-colors"
-                  placeholder="Tell us your name"
-                />
+                >
+                  <option value="">Select your age range</option>
+                  <option value="13-17">13-17</option>
+                  <option value="18-22">18-22</option>
+                  <option value="23-30">23-30</option>
+                  <option value="30+">30+</option>
+                </select>
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-foreground mb-2">
-                  Email Address
+                <label htmlFor="fitnessLevel" className="block text-sm font-semibold text-foreground mb-2">
+                  Fitness Level
                 </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
+                <select
+                  id="fitnessLevel"
+                  name="fitnessLevel"
                   required
                   className="w-full px-4 py-3 rounded-2xl bg-input border-2 border-border focus:border-primary focus:outline-none transition-colors"
-                  placeholder="your.email@example.com"
-                />
+                >
+                  <option value="">Select your level</option>
+                  <option value="beginner">Beginner</option>
+                  <option value="intermediate">Intermediate</option>
+                  <option value="advanced">Advanced</option>
+                  <option value="notSure">Not sure</option>
+                </select>
               </div>
+            </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="age" className="block text-sm font-semibold text-foreground mb-2">
-                    Age Range
-                  </label>
-                  <select
-                    id="age"
-                    name="age"
-                    value={formData.age}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 rounded-2xl bg-input border-2 border-border focus:border-primary focus:outline-none transition-colors"
-                  >
-                    <option value="">Select your age range</option>
-                    <option value="13-17">13-17</option>
-                    <option value="18-22">18-22</option>
-                    <option value="23-30">23-30</option>
-                    <option value="30+">30+</option>
-                  </select>
-                </div>
+            <div>
+              <label htmlFor="message" className="block text-sm font-semibold text-foreground mb-2">
+                Why do you want to join us?
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                className="w-full px-4 py-3 rounded-2xl bg-input border-2 border-border focus:border-primary focus:outline-none transition-colors resize-none h-24"
+                placeholder="Tell us what you're looking for in a community..."
+              />
+            </div>
 
-                <div>
-                  <label htmlFor="fitnessLevel" className="block text-sm font-semibold text-foreground mb-2">
-                    Fitness Level
-                  </label>
-                  <select
-                    id="fitnessLevel"
-                    name="fitnessLevel"
-                    value={formData.fitnessLevel}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 rounded-2xl bg-input border-2 border-border focus:border-primary focus:outline-none transition-colors"
-                  >
-                    <option value="">Select your level</option>
-                    <option value="beginner">Beginner</option>
-                    <option value="intermediate">Intermediate</option>
-                    <option value="advanced">Advanced</option>
-                    <option value="notSure">Not sure</option>
-                  </select>
-                </div>
-              </div>
+            <button
+              type="submit"
+              className="w-full bg-primary text-primary-foreground py-4 rounded-full hover:bg-primary/90 transition-all hover:shadow-lg font-semibold text-lg flex items-center justify-center gap-2"
+            >
+              Register <ArrowRight className="w-5 h-5" />
+            </button>
 
-              <div>
-                <label htmlFor="message" className="block text-sm font-semibold text-foreground mb-2">
-                  Why do you want to join us?
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 rounded-2xl bg-input border-2 border-border focus:border-primary focus:outline-none transition-colors resize-none h-24"
-                  placeholder="Tell us what you're looking for in a community..."
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="w-full bg-primary text-primary-foreground py-4 rounded-full hover:bg-primary/90 transition-all hover:shadow-lg font-semibold text-lg flex items-center justify-center gap-2"
-              >
-                Register <ArrowRight className="w-5 h-5" />
-              </button>
-
-              <p className="text-center text-foreground/60 text-sm">
-                By joining, you agree to our community values of respect, confidentiality, and
-                sisterhood.
-              </p>
-            </form>
-          )}
+            <p className="text-center text-foreground/60 text-sm">
+              By registering, you agree to our community values of respect, confidentiality, and
+              sisterhood.
+            </p>
+          </form>
         </div>
       </section>
 
