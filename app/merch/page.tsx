@@ -44,7 +44,7 @@ export default function Merch() {
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="rounded-3xl h-80 overflow-hidden">
-              <img src="/tshirt1.jpg" alt="Syotria Merch" className="w-full h-full object-cover" />
+              <img src="/tshirt1.png" alt="Syotria Merch" className="w-full h-full object-cover" />
             </div>
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
