@@ -252,7 +252,7 @@ export default function Home() {
             Syotria journey and represents the values that bind our community together.
           </p>
           <div className="rounded-3xl mb-8 h-96 overflow-hidden">
-            <img src="/sweatshirt4.jpg" alt="Syotria Merch" className="w-full h-full object-cover" />
+            <img src="/sweatshirt4.png" alt="Syotria Merch" className="w-full h-full object-cover" />
           </div>
           <Link
             href="/merch"
