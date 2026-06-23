@@ -251,8 +251,8 @@ export default function Home() {
             Wear your sisterhood with pride. Our thoughtfully designed merch celebrates the
             Syotria journey and represents the values that bind our community together.
           </p>
-          <div className="rounded-3xl mb-8 h-64 overflow-hidden">
-            <img src="/equipment.jpg" alt="Syotria Merch" className="w-full h-full object-cover" />
+          <div className="rounded-3xl mb-8 h-96 overflow-hidden">
+            <img src="/sweatshirt4.jpg" alt="Syotria Merch" className="w-full h-full object-cover" />
           </div>
           <Link
             href="/merch"
