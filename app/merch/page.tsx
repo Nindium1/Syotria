@@ -1,46 +1,24 @@
 import Navigation from '@/components/navigation'
 import Footer from '@/components/footer'
-import Link from 'next/link'
-import { ExternalLink } from 'lucide-react'
+import { MessageCircle } from 'lucide-react'
 
 export default function Merch() {
   const merchItems = [
-    {
-      name: 'Syotria Core Hoodie',
-      description: 'Soft, cozy hoodie perfect for pre and post-workout warmth',
-      price: '$65',
-      emoji: '🎽',
-    },
-    {
-      name: 'Confidence T-Shirt',
-      description: 'Everyday tee celebrating the strength within every girl',
-      price: '$28',
-      emoji: '👕',
-    },
-    {
-      name: 'Sisterhood Sports Bra',
-      description: 'Supportive and stylish workout essential designed for comfort',
-      price: '$48',
-      emoji: '🧢',
-    },
-    {
-      name: 'Wellness Water Bottle',
-      description: 'Stainless steel bottle to keep you hydrated during challenges',
-      price: '$32',
-      emoji: '🧴',
-    },
-    {
-      name: 'Syotria Yoga Mat',
-      description: 'Premium mat for yoga, pilates, and mindful movement',
-      price: '$75',
-      emoji: '🧘',
-    },
-    {
-      name: 'Growth Mindset Cap',
-      description: 'Adjustable cap to wear your Syotria pride anywhere',
-      price: '$24',
-      emoji: '🧢',
-    },
+    { name: 'Yoga Girl T-Shirt', price: 'KES 1,299', img: '/tshirt1.jpg' },
+    { name: 'I Got Me T-Shirt', price: 'KES 1,299', img: '/tshirt2.jpg' },
+    { name: 'Me Time T-Shirt', price: 'KES 1,299', img: '/tshirt3.jpg' },
+    { name: 'Self T-Shirt', price: 'KES 1,299', img: '/tshirt4.jpg' },
+    { name: 'No Stress, Just Stretch T-Shirt', price: 'KES 1,299', img: '/tshirt5.jpg' },
+    { name: 'The Reader T-Shirt', price: 'KES 1,299', img: '/tshirt6.jpg' },
+    { name: 'Daily Steps T-Shirt', price: 'KES 1,299', img: '/tshirt7.jpg' },
+    { name: 'Me Time Sweatshirt', price: 'KES 2,500', img: '/sweatshirt1.jpg' },
+    { name: 'No Stress, Just Stretch Sweatshirt', price: 'KES 2,500', img: '/sweatshirt2.jpg' },
+    { name: 'The Reader Sweatshirt', price: 'KES 2,500', img: '/sweatshirt3.jpg' },
+    { name: 'Yoga Girl Sweatshirt', price: 'KES 2,500', img: '/sweatshirt4.jpg' },
+    { name: 'Self Sweatshirt', price: 'KES 2,500', img: '/sweatshirt5.jpg' },
+    { name: 'Me Time Cap', price: 'KES 950', img: '/cap1.jpg' },
+    { name: 'Self Cap', price: 'KES 950', img: '/cap2.jpg' },
+    { name: 'Self Mug', price: 'KES 850', img: '/mug.jpg' },
   ]
 
   return (
@@ -50,7 +28,6 @@ export default function Merch() {
       {/* Hero Section */}
       <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl -z-10"></div>
-
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance leading-tight">
             <span className="text-primary">Syotria</span> Merch
@@ -66,8 +43,8 @@ export default function Merch() {
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-secondary/30">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl h-80 flex items-center justify-center">
-              <span className="text-7xl">👕</span>
+            <div className="rounded-3xl h-80 overflow-hidden">
+              <img src="/tshirt1.jpg" alt="Syotria Merch" className="w-full h-full object-cover" />
             </div>
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -128,17 +105,21 @@ export default function Merch() {
                 key={item.name}
                 className="bg-card rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="bg-gradient-to-br from-primary/10 to-accent/10 h-48 flex items-center justify-center">
-                  <span className="text-6xl">{item.emoji}</span>
+                <div className="h-64 overflow-hidden">
+                  <img src={item.img} alt={item.name} className="w-full h-full object-cover" />
                 </div>
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold text-foreground mb-2">{item.name}</h3>
-                  <p className="text-foreground/70 mb-4">{item.description}</p>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-foreground mb-3">{item.name}</h3>
                   <div className="flex items-center justify-between">
-                    <span className="text-2xl font-bold text-primary">{item.price}</span>
-                    <button className="bg-secondary text-secondary-foreground px-4 py-2 rounded-full hover:bg-secondary/80 transition-colors text-sm font-semibold">
-                      View
-                    </button>
+                    <span className="text-xl font-bold text-primary">{item.price}</span>
+                    <a
+                      href="https://wa.me/254748416553"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-primary text-primary-foreground px-4 py-2 rounded-full hover:bg-primary/90 transition-colors text-sm font-semibold"
+                    >
+                      Order
+                    </a>
                   </div>
                 </div>
               </div>
@@ -147,42 +128,54 @@ export default function Merch() {
         </div>
       </section>
 
-      {/* New Drops */}
+      {/* Coming Soon */}
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-secondary/30">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
             Coming Soon
           </h2>
           <p className="text-center text-foreground/70 mb-12 text-lg max-w-2xl mx-auto">
-            New drops every quarter to celebrate our challenges and community milestones.
+            We're expanding! Here's a sneak peek at what's coming to the Syotria store.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-card rounded-2xl p-8 text-center">
-              <div className="text-5xl mb-4">🧘</div>
-              <h3 className="text-xl font-bold text-foreground mb-2">Q1 Yoga Collection</h3>
-              <p className="text-foreground/70 text-sm mb-4">
-                Limited edition pieces celebrating our Yoga Challenge
-              </p>
-              <span className="text-primary font-semibold text-sm">Available Jan 2025</span>
+            <div className="bg-card rounded-3xl overflow-hidden shadow-sm">
+              <div className="h-48 overflow-hidden">
+                <img src="/outfits.jpg" alt="Workout Outfits" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-6 text-center">
+                <h3 className="text-xl font-bold text-foreground mb-2">Workout Outfits</h3>
+                <p className="text-foreground/70 text-sm mb-4">
+                  Sports bras, t-shirts, pants and more — everything you need to move in style.
+                </p>
+                <span className="text-primary font-semibold text-sm">Coming Soon</span>
+              </div>
             </div>
 
-            <div className="bg-card rounded-2xl p-8 text-center">
-              <div className="text-5xl mb-4">💪</div>
-              <h3 className="text-xl font-bold text-foreground mb-2">Q2 Pilates Edition</h3>
-              <p className="text-foreground/70 text-sm mb-4">
-                Special designs honoring strength and grace
-              </p>
-              <span className="text-primary font-semibold text-sm">Available Apr 2025</span>
+            <div className="bg-card rounded-3xl overflow-hidden shadow-sm">
+              <div className="h-48 overflow-hidden">
+                <img src="/equipment.jpg" alt="Equipment" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-6 text-center">
+                <h3 className="text-xl font-bold text-foreground mb-2">Equipment</h3>
+                <p className="text-foreground/70 text-sm mb-4">
+                  Yoga mats, skipping ropes, resistance bands, dumbbells, shoes and more.
+                </p>
+                <span className="text-primary font-semibold text-sm">Coming Soon</span>
+              </div>
             </div>
 
-            <div className="bg-card rounded-2xl p-8 text-center">
-              <div className="text-5xl mb-4">🎉</div>
-              <h3 className="text-xl font-bold text-foreground mb-2">Exclusive Drops</h3>
-              <p className="text-foreground/70 text-sm mb-4">
-                Surprise collaborations and limited runs throughout the year
-              </p>
-              <span className="text-primary font-semibold text-sm">Stay Tuned</span>
+            <div className="bg-card rounded-3xl overflow-hidden shadow-sm">
+              <div className="h-48 overflow-hidden">
+                <img src="/planners.jpg" alt="Planners" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-6 text-center">
+                <h3 className="text-xl font-bold text-foreground mb-2">Planners</h3>
+                <p className="text-foreground/70 text-sm mb-4">
+                  Beautifully designed planners and diaries to help you stay organised and intentional.
+                </p>
+                <span className="text-primary font-semibold text-sm">Coming Soon</span>
+              </div>
             </div>
           </div>
         </div>
@@ -200,26 +193,25 @@ export default function Merch() {
 
           <div className="bg-card rounded-3xl p-8 space-y-6">
             <div className="border-b border-border pb-6">
-              <h3 className="text-xl font-bold text-foreground mb-2">Tops & Hoodies</h3>
+              <h3 className="text-xl font-bold text-foreground mb-2">T-Shirts</h3>
               <p className="text-foreground/70">
-                Designed with a relaxed fit for layering and movement. If you're between sizes,
+                Designed with a relaxed fit for everyday wear and movement. If you're between sizes,
                 we recommend sizing up for comfort.
               </p>
             </div>
 
             <div className="border-b border-border pb-6">
-              <h3 className="text-xl font-bold text-foreground mb-2">Activewear</h3>
+              <h3 className="text-xl font-bold text-foreground mb-2">Sweatshirts</h3>
               <p className="text-foreground/70">
-                Our sports bras and leggings are engineered for support and stretch. Check the
-                sizing chart for your best fit.
+                Cozy and roomy for layering. We recommend your true size for a classic fit or
+                sizing up for an oversized look.
               </p>
             </div>
 
             <div className="border-b border-border pb-6">
-              <h3 className="text-xl font-bold text-foreground mb-2">Accessories</h3>
+              <h3 className="text-xl font-bold text-foreground mb-2">Caps</h3>
               <p className="text-foreground/70">
-                Water bottles are universal size. Hats are adjustable for all head sizes. Mats
-                come in standard yoga dimensions.
+                Adjustable for all head sizes — one size fits all.
               </p>
             </div>
 
@@ -238,17 +230,19 @@ export default function Merch() {
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary/10 to-accent/10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Shop Now
+            Ready to Order?
           </h2>
-              <p className="text-foreground/70 text-lg mb-8 max-w-2xl mx-auto">
-                Wear your sisterhood with pride. Our thoughtfully designed merch celebrates the
-                <span className="text-primary">Syotria</span> journey and represents the values that bind our community together.
-              </p>
+          <p className="text-foreground/70 text-lg mb-8 max-w-2xl mx-auto">
+            Wear your sisterhood with pride. Reach out to us directly to place your order and
+            we'll get back to you as soon as possible.
+          </p>
           <a
-            href="#"
+            href="https://wa.me/254748416553"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full hover:bg-primary/90 transition-all hover:shadow-lg text-lg font-semibold"
           >
-            Visit Syotria Store <ExternalLink className="w-5 h-5" />
+            Get in Touch <MessageCircle className="w-5 h-5" />
           </a>
         </div>
       </section>
