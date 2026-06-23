@@ -57,7 +57,7 @@ export default function Merch() {
               </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <span className="text-primary text-2xl">✨</span>
+                 <span className="text-primary text-2xl">✓</span>
                   <div>
                     <h3 className="font-semibold text-foreground">Quality & Comfort</h3>
                     <p className="text-foreground/70 text-sm">
@@ -66,7 +66,7 @@ export default function Merch() {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-primary text-2xl">🌍</span>
+                  <span className="text-primary text-2xl">✓</span>
                   <div>
                     <h3 className="font-semibold text-foreground">Sustainable</h3>
                     <p className="text-foreground/70 text-sm">
@@ -75,7 +75,7 @@ export default function Merch() {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-primary text-2xl">💝</span>
+                  <span className="text-primary text-2xl">✓</span>
                   <div>
                     <h3 className="font-semibold text-foreground">Purpose</h3>
                     <p className="text-foreground/70 text-sm">
