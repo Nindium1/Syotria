@@ -81,7 +81,7 @@ export default function Resources() {
       Resources for Your Wellness Journey
     </h1>
     <p className="text-xl md:text-2xl text-white/80 mb-8 text-balance leading-relaxed max-w-2xl mx-auto">
-      Everything you need to succeed with your <span className="text-primary">Syotria</span> challenges. Music to motivate,
+      Everything you need to succeed with your <span className="text-white">Syotria</span> challenges. Music to motivate,
       videos to inspire, and tools to celebrate your progress.
     </p>
   </div>
