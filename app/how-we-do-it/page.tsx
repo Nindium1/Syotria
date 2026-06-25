@@ -9,18 +9,25 @@ export default function HowWeDoIt() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl -z-10"></div>
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance leading-tight">
-            How <span className="text-primary">Syotria</span> Works
-          </h1>
-          <p className="text-xl md:text-2xl text-foreground/70 mb-8 text-balance leading-relaxed max-w-2xl mx-auto">
-            A simple, sustainable system designed to keep you moving, growing, and connected
-            all year long.
-          </p>
-        </div>
-      </section>
+     <section
+  className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
+  style={{
+    backgroundImage: 'url(/how-we-do-it-hero.jpg)',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  }}
+>
+  <div className="absolute inset-0 bg-black/50"></div>
+  <div className="max-w-4xl mx-auto text-center relative z-10">
+    <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 text-balance leading-tight">
+      How <span className="text-primary">Syotria</span> Works
+    </h1>
+    <p className="text-xl md:text-2xl text-white/80 mb-8 text-balance leading-relaxed max-w-2xl mx-auto">
+      A simple, sustainable system designed to keep you moving, growing, and connected
+      all year long.
+    </p>
+  </div>
+</section>
 
       {/* The Quarterly System */}
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-secondary/30">
