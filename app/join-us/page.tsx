@@ -20,7 +20,7 @@ export default function JoinUs() {
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-black/50"></div>
+    <div className="absolute inset-0 bg-black/60"></div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 text-balance leading-tight">
             Join <span className="text-primary">Syotria</span>
