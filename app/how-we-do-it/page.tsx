@@ -20,7 +20,7 @@ export default function HowWeDoIt() {
   <div className="absolute inset-0 bg-black/50"></div>
   <div className="max-w-4xl mx-auto text-center relative z-10">
     <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 text-balance leading-tight">
-      How <span className="text-primary">Syotria</span> Works
+      <span style={{ color: '#c084fc' }}>Syotria</span>
     </h1>
     <p className="text-xl md:text-2xl text-white/80 mb-8 text-balance leading-relaxed max-w-2xl mx-auto">
       A simple, sustainable system designed to keep you moving, growing, and connected
