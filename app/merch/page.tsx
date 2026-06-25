@@ -4,21 +4,21 @@ import { MessageCircle } from 'lucide-react'
 
 export default function Merch() {
   const merchItems = [
-    { name: 'Yoga Girl T-Shirt', price: 'KES 1,299', img: '/tshirt1.jpg' },
-    { name: 'I Got Me T-Shirt', price: 'KES 1,299', img: '/tshirt2.jpg' },
-    { name: 'Me Time T-Shirt', price: 'KES 1,299', img: '/tshirt3.jpg' },
-    { name: 'Self T-Shirt', price: 'KES 1,299', img: '/tshirt4.jpg' },
-    { name: 'No Stress, Just Stretch T-Shirt', price: 'KES 1,299', img: '/tshirt5.jpg' },
-    { name: 'The Reader T-Shirt', price: 'KES 1,299', img: '/tshirt6.jpg' },
-    { name: 'Daily Steps T-Shirt', price: 'KES 1,299', img: '/tshirt7.jpg' },
-    { name: 'Me Time Sweatshirt', price: 'KES 2,500', img: '/sweatshirt1.jpg' },
-    { name: 'No Stress, Just Stretch Sweatshirt', price: 'KES 2,500', img: '/sweatshirt2.jpg' },
-    { name: 'The Reader Sweatshirt', price: 'KES 2,500', img: '/sweatshirt3.jpg' },
-    { name: 'Yoga Girl Sweatshirt', price: 'KES 2,500', img: '/sweatshirt4.jpg' },
-    { name: 'Self Sweatshirt', price: 'KES 2,500', img: '/sweatshirt5.jpg' },
-    { name: 'Me Time Cap', price: 'KES 950', img: '/cap1.jpg' },
-    { name: 'Self Cap', price: 'KES 950', img: '/cap2.jpg' },
-    { name: 'Self Mug', price: 'KES 850', img: '/mug.jpg' },
+    { name: 'Yoga Girl T-Shirt', price: 'KES 1,299', img: '/tshirt1.png' },
+    { name: 'I Got Me T-Shirt', price: 'KES 1,299', img: '/tshirt2.png' },
+    { name: 'Me Time T-Shirt', price: 'KES 1,299', img: '/tshirt3.png' },
+    { name: 'Self T-Shirt', price: 'KES 1,299', img: '/tshirt4.png' },
+    { name: 'No Stress, Just Stretch T-Shirt', price: 'KES 1,299', img: '/tshirt5.png' },
+    { name: 'The Reader T-Shirt', price: 'KES 1,299', img: '/tshirt6.png' },
+    { name: 'Daily Steps T-Shirt', price: 'KES 1,299', img: '/tshirt7.png' },
+    { name: 'Me Time Sweatshirt', price: 'KES 2,500', img: '/sweatshirt1.png' },
+    { name: 'No Stress, Just Stretch Sweatshirt', price: 'KES 2,500', img: '/sweatshirt2.png' },
+    { name: 'The Reader Sweatshirt', price: 'KES 2,500', img: '/sweatshirt3.png' },
+    { name: 'Yoga Girl Sweatshirt', price: 'KES 2,500', img: '/sweatshirt4.png' },
+    { name: 'Self Sweatshirt', price: 'KES 2,500', img: '/sweatshirt5.png' },
+    { name: 'Me Time Cap', price: 'KES 950', img: '/cap1.png' },
+    { name: 'Self Cap', price: 'KES 950', img: '/cap2.png' },
+    { name: 'Self Mug', price: 'KES 850', img: '/mug.png' },
   ]
 
   return (
@@ -51,7 +51,7 @@ export default function Merch() {
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="rounded-3xl h-80 overflow-hidden">
-              <img src="/tshirt1.jpg" alt="Syotria Merch" className="w-full h-full object-cover" />
+              <img src="/tshirt1.png" alt="Syotria Merch" className="w-full h-full object-cover" />
             </div>
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
