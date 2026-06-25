@@ -4,21 +4,21 @@ import { MessageCircle } from 'lucide-react'
 
 export default function Merch() {
   const merchItems = [
-    { name: 'Yoga Girl T-Shirt', price: 'KES 1,299', img: '/tshirt1.png' },
-    { name: 'I Got Me T-Shirt', price: 'KES 1,299', img: '/tshirt2.png' },
-    { name: 'Me Time T-Shirt', price: 'KES 1,299', img: '/tshirt3.png' },
-    { name: 'Self T-Shirt', price: 'KES 1,299', img: '/tshirt4.png' },
-    { name: 'No Stress, Just Stretch T-Shirt', price: 'KES 1,299', img: '/tshirt5.png' },
-    { name: 'The Reader T-Shirt', price: 'KES 1,299', img: '/tshirt6.png' },
-    { name: 'Daily Steps T-Shirt', price: 'KES 1,299', img: '/tshirt7.png' },
-    { name: 'Me Time Sweatshirt', price: 'KES 2,500', img: '/sweatshirt1.png' },
-    { name: 'No Stress, Just Stretch Sweatshirt', price: 'KES 2,500', img: '/sweatshirt2.png' },
-    { name: 'The Reader Sweatshirt', price: 'KES 2,500', img: '/sweatshirt3.png' },
-    { name: 'Yoga Girl Sweatshirt', price: 'KES 2,500', img: '/sweatshirt4.png' },
-    { name: 'Self Sweatshirt', price: 'KES 2,500', img: '/sweatshirt5.png' },
-    { name: 'Me Time Cap', price: 'KES 950', img: '/cap1.png' },
-    { name: 'Self Cap', price: 'KES 950', img: '/cap2.png' },
-    { name: 'Self Mug', price: 'KES 850', img: '/mug.png' },
+    { name: 'Yoga Girl T-Shirt', price: 'KES 1,299', img: '/tshirt1.jpg' },
+    { name: 'I Got Me T-Shirt', price: 'KES 1,299', img: '/tshirt2.jpg' },
+    { name: 'Me Time T-Shirt', price: 'KES 1,299', img: '/tshirt3.jpg' },
+    { name: 'Self T-Shirt', price: 'KES 1,299', img: '/tshirt4.jpg' },
+    { name: 'No Stress, Just Stretch T-Shirt', price: 'KES 1,299', img: '/tshirt5.jpg' },
+    { name: 'The Reader T-Shirt', price: 'KES 1,299', img: '/tshirt6.jpg' },
+    { name: 'Daily Steps T-Shirt', price: 'KES 1,299', img: '/tshirt7.jpg' },
+    { name: 'Me Time Sweatshirt', price: 'KES 2,500', img: '/sweatshirt1.jpg' },
+    { name: 'No Stress, Just Stretch Sweatshirt', price: 'KES 2,500', img: '/sweatshirt2.jpg' },
+    { name: 'The Reader Sweatshirt', price: 'KES 2,500', img: '/sweatshirt3.jpg' },
+    { name: 'Yoga Girl Sweatshirt', price: 'KES 2,500', img: '/sweatshirt4.jpg' },
+    { name: 'Self Sweatshirt', price: 'KES 2,500', img: '/sweatshirt5.jpg' },
+    { name: 'Me Time Cap', price: 'KES 950', img: '/cap1.jpg' },
+    { name: 'Self Cap', price: 'KES 950', img: '/cap2.jpg' },
+    { name: 'Self Mug', price: 'KES 850', img: '/mug.jpg' },
   ]
 
   return (
@@ -26,13 +26,20 @@ export default function Merch() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl -z-10"></div>
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance leading-tight">
+      <section
+        className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
+        style={{
+          backgroundImage: 'url(/merch-hero.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="max-w-4xl mx-auto text-center relative z-10">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 text-balance leading-tight">
             <span className="text-primary">Syotria</span> Merch
           </h1>
-          <p className="text-xl md:text-2xl text-foreground/70 mb-8 text-balance leading-relaxed max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-white/80 mb-8 text-balance leading-relaxed max-w-2xl mx-auto">
             Wear your sisterhood with pride. Our carefully crafted collection celebrates the
             values that bind our community together.
           </p>
@@ -44,7 +51,7 @@ export default function Merch() {
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="rounded-3xl h-80 overflow-hidden">
-              <img src="/tshirt1.png" alt="Syotria Merch" className="w-full h-full object-cover" />
+              <img src="/tshirt1.jpg" alt="Syotria Merch" className="w-full h-full object-cover" />
             </div>
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -57,7 +64,7 @@ export default function Merch() {
               </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                 <span className="text-primary text-2xl">✓</span>
+                  <span className="text-primary text-2xl">✨</span>
                   <div>
                     <h3 className="font-semibold text-foreground">Quality & Comfort</h3>
                     <p className="text-foreground/70 text-sm">
@@ -66,7 +73,7 @@ export default function Merch() {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-primary text-2xl">✓</span>
+                  <span className="text-primary text-2xl">🌍</span>
                   <div>
                     <h3 className="font-semibold text-foreground">Sustainable</h3>
                     <p className="text-foreground/70 text-sm">
@@ -75,7 +82,7 @@ export default function Merch() {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-primary text-2xl">✓</span>
+                  <span className="text-primary text-2xl">💝</span>
                   <div>
                     <h3 className="font-semibold text-foreground">Purpose</h3>
                     <p className="text-foreground/70 text-sm">
