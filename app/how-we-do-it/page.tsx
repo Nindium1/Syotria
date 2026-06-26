@@ -162,7 +162,7 @@ export default function HowWeDoIt() {
             <h3 className="text-2xl font-bold text-foreground mb-3">Membership Fee</h3>
             <p className="text-foreground/70 leading-relaxed max-w-2xl mx-auto">
               Participating in Syotria requires a quarterly membership fee of{' '}
-              <span className="font-bold text-primary">KES 5,00</span>. This sustains our
+              <span className="font-bold text-primary">KES 500</span>. This sustains our
               community by covering shared resources, in-person meetup costs, and community
               activities.
             </p>
