@@ -3,6 +3,7 @@
 import React from "react"
 import Navigation from '@/components/navigation'
 import Footer from '@/components/footer'
+import ReviewsSlideshow from '@/components/reviews-slideshow'
 import Link from 'next/link'
 import { CheckCircle, ArrowRight } from 'lucide-react'
 
@@ -107,6 +108,9 @@ export default function JoinUs() {
           </div>
         </div>
       </section>
+
+      {/* Member Reviews */}
+      <ReviewsSlideshow />
 
       {/* Who Should Join */}
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
