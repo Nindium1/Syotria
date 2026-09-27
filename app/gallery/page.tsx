@@ -13,8 +13,8 @@ export default function Gallery() {
     { id: 8, img: '/syotria8.png', title: 'Syotria Moments', caption: 'Celebrating consistency and growth' },
     { id: 9, img: '/syotria9.png', title: 'Syotria Moments', caption: 'Building bonds that last' },
     { id: 10, img: '/syotria10.png', title: 'Syotria Moments', caption: 'Starting the day together' },
-    { id: 11, img: '/syotria11.png', title: 'Syotria Moments', caption: 'Moving together, growing together' }
-    { id: 12, img: '/syotria12.jpg', title: 'Syotria Moments', caption: 'Moving together, growing together' },
+    { id: 11, img: '/syotria11.png', title: 'Syotria Moments', caption: 'Moving together, growing together' },
+    { id: 12, img: '/syotria12.png', title: 'Syotria Moments', caption: 'Moving together, growing together' }
   ]
 
   return (
