@@ -191,7 +191,7 @@ export default function Resources() {
           </h2>
           <p className="text-lg text-foreground/70 mb-8 leading-relaxed max-w-2xl mx-auto">
             These resources are here to support you, not pressure you. Whether you use every
-            playlist or just one, whether you watch all videos or a few—what matters is that
+            playlist or just one, whether you watch all videos or a few; what matters is that
             you're showing up for yourself. Every step counts, every effort is celebrated.
           </p>
           <div className="inline-flex items-center gap-3 bg-card rounded-full px-6 py-3">
