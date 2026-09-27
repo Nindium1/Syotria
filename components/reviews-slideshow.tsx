@@ -14,7 +14,7 @@ const reviews = [
   {
     quote: 'I joined Syotria because I wanted to join the military and needed to stay fit. As much as I did not reach that initial goal, it’s been such a rewarding experience for me especially in building physical fitness and gaining mental discipline. The daily routines really challenge you to show up consistently. My absolute favorites are the walks and rope skipping! While I’m still working on getting the hang of yoga and pilates (we’ll get there eventually! 😂), I love how encouraging the space is. Beyond the workouts, the sense of community is amazing. The quarterly hangouts are definitely a highlight, connecting in person with like-minded, driven ladies makes you feel genuinely connected and supported. So grateful to move and grow with Syotria! ',
     name: 'Gloria',
-    detail: 'Member since 2026',
+    detail: 'Member since 2025',
   },
   {
     quote: 'Third review goes here.',
