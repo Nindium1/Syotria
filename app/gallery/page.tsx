@@ -5,8 +5,8 @@ export default function Gallery() {
   const galleryItems = [
     { id: 1, img: '/syotria1.png', title: 'Syotria Moments', caption: 'Finding strength in stillness' },
     { id: 2, img: '/syotria2.png', title: 'Syotria Moments', caption: 'Core strength and grace' },
-    { id: 3, img: '/syotria3.png', title: 'Syotria Moments', caption: 'Building momentum together' },
-    { id: 4, img: '/syotria4.png', title: 'Syotria Moments', caption: 'Every step counts' },
+    { id: 3, img: '/syotria3.png', title: 'Syotria Moments', caption: 'Creating memories' },
+    { id: 4, img: '/syotria4.png', title: 'Syotria Moments', caption: 'Freedom to be you' },
     { id: 5, img: '/syotria5.png', title: 'Syotria Moments', caption: 'Open conversations, real connections' },
     { id: 6, img: '/syotria6.png', title: 'Syotria Moments', caption: 'Sisterhood in real time' },
     { id: 7, img: '/syotria7.png', title: 'Syotria Moments', caption: 'Where the magic happens' },
