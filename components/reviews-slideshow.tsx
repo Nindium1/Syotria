@@ -7,8 +7,8 @@ import { ChevronLeft, ChevronRight, Quote } from 'lucide-react'
 const reviews = [
   {
     quote:
-      'Replace this with a real review from a member. Two or three sentences reads best on phones.',
-    name: 'Member name',
+      'I love how Syotria has brought together a group of young women who are simply trying to grow, stay active, and enjoy life together. I’ve really enjoyed taking part in the fitness challenges because they keep me motivated and accountable, even on days when I don’t feel like doing much. My favorite thing about Syotria is that it doesn’t feel like just another group; it feels like a community where you can show up as yourself, meet new people, and grow together.',
+    name: 'Waridi',
     detail: 'Member since 2025',
   },
   {
