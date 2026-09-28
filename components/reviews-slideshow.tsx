@@ -22,7 +22,7 @@ const reviews = [
     detail: 'Member since 2024',
   },
   {
-    quote: 'I joined Syotria in 2024, and it's honestly been one of the best decisions I've made for myself. Being part of a girls-only fitness community has completely shifted how I think about fitness; not as a phase, but as something built on consistency. Our virtual hangouts every other Friday have become something I look forward to; we bond, laugh, and talk through so many different sides of our lives, and I've gained real clarity on what staying consistent actually looks like. But my favorite part has to be logging our workouts and seeing everyone's reactions; it's hilarious watching us all "suffer" through the same exercises in our own dramatic ways. ✨',
+    quote: 'I joined Syotria in 2024, and it is honestly been one of the best decisions I have made for myself. Being part of a girls-only fitness community has completely shifted how I think about fitness; not as a phase, but as something built on consistency. Our virtual hangouts every other Friday have become something I look forward to; we bond, laugh, and talk through so many different sides of our lives, and I have gained real clarity on what staying consistent actually looks like. But my favorite part has to be logging our workouts and seeing everyones reactions; it is hilarious watching us all "suffer" through the same exercises in our own dramatic ways. ✨',
     name: 'Hamdhi',
     detail: 'Member since 2024',
   },
