@@ -27,9 +27,9 @@ const reviews = [
     detail: 'Member since 2024',
   },
   {
-    quote: 'Fifth review goes here.',
-    name: 'Member name',
-    detail: 'Member since 2026',
+    quote: 'Syotria has helped me keep momentum for my workouts. Everyday I am reminded to move a little. Especially when I see others make progress as well. It is very motivating. And I rekindled a love for skipping here!',
+    name: 'Elizabeth',
+    detail: 'Member since 2025',
   },
   {
     quote: 'Sixth review goes here.',
