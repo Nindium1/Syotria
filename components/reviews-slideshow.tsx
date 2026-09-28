@@ -17,9 +17,9 @@ const reviews = [
     detail: 'Member since 2025',
   },
   {
-    quote: 'Third review goes here.',
-    name: 'Member name',
-    detail: 'Member since 2026',
+    quote: 'Syotria found me at a stage in my life when I had just started my career and was learning how to live on my own and navigate adulthood. What I love most about the community is the girlhood spirit;the  raw and honest conversations, the encouragement and the motivation to keep moving forward. I love how Syotria creates space for honest conversations about the struggles, beauty and realities of adulthood while still incorporating fitness and wellness. I’ve also really loved  the consistency the community encourages and the reminder to always strive to be the best version of myself. My favourite part is simply being surrounded by ladies who are growing, learning and figuring it all out together😊',
+    name: 'Wendy',
+    detail: 'Member since 2024',
   },
   {
     quote: 'Fourth review goes here.',
