@@ -32,9 +32,9 @@ const reviews = [
     detail: 'Member since 2025',
   },
   {
-    quote: 'Sixth review goes here.',
-    name: 'Member name',
-    detail: 'Member since 2026',
+    quote: 'Being in Syotria has been such a great experience for me. Before joining, I never used to exercise, so being part of this community has helped me grow and become more intentional about staying active. I love our quarterly challenges.  My favorite is definitely the daily steps because they keep me moving consistently. I also love the sisterhood and encouragement we give each other. Seeing other sisters show up motivates me to do the same. Our quarterly hangouts are another highlight, where we have fun, reflect on our progress, celebrate our wins and set new goals. What I’ve gained goes beyond fitness; Syotria has helped me become more consistent, disciplined and intentional in other areas of my life.',
+    name: 'Joy',
+    detail: 'Member since 2025',
   },
 ]
 
